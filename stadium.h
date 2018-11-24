@@ -19,10 +19,10 @@ public:
     int length;
     string purpose;
    
-    Stadium(int n1 , string s , double n2){
-        quantity = n1;
-        name = s;
-        power = n2;
+    Stadium(int first_argument , string second_argument , double third_argument){
+        quantity = first_argument;
+        name = second_argument;
+        power = third_argument;
         year = 1999;
         condition = "Good";
         length = 1000;

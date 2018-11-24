@@ -1,26 +1,26 @@
 #include "stadium.h"
 
-int first;
-string second;
-double third;
+int first_info;
+string second_info;
+double third_info;
 
 void Input() {
     cout << "Write the number of viewers on stadium: ";
-    cin >> first;
+    cin >> first_info;
     cout << "\n";
     
     cout << "Write the name of stadium: ";
-    cin >> second;
+    cin >> second_info;
     cout << "\n";
     
     cout << "Write the power of lighting on stadium: ";
-    cin >> third;
+    cin >> third_info;
     cout << "\n";
 }
-void go(Stadium Var) {
-    Var.GetQuantity(first);
-    Var.GetName(second);
-    Var.GetPower(third);
+void create(Stadium Var) {
+    Var.GetQuantity(first_info);
+    Var.GetName(second_info);
+    Var.GetPower(third_info);
     
     cout << "Name: ";
     Var.PrintName();
@@ -40,11 +40,11 @@ void go(Stadium Var) {
 int main() {
     Stadium Stad1(1 , "no1" , 213)  , Stad2(2, "no2", 5266) , Stad3(3, "no3", 3662);
     Input();
-    go(Stad1);
+    create(Stad1);
     Input();
-    go(Stad2);
+    create(Stad2);
     Input();
-    go(Stad3);
+    create(Stad3);
     
     return 0;
 }
